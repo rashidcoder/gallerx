@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Gallery</title>
+</head>
+
+<body>
+    <div id="app"></div> 
+
+    <!-- react | react dom & bable -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!-- react | react dom & babel end -->
+ 
+    <script type="text/jsx" src="view/gallerypopup1.jsx"></script>
+    <script type="text/jsx" src="view/gallerypopup2.jsx"></script> 
+    <script type="text/jsx" src="view/basicomponents/glabel.jsx"></script>
+    <script type="text/jsx" src="view/basicomponents/gInput.jsx"></script>
+    <script type="text/jsx" src="view/basicomponents/gbutton.jsx"></script> 
+    <script type="text/jsx" src="view/basicomponents/gtextarea.jsx"></script> 
+    <script type="text/jsx" src="view/basicomponents/gradio.jsx"></script> 
+    
+    <!-- GalleryPopUp2 -->
+    
+    <!-- jsx script calls end -->
+
+    <!--  jsx render -->
+    <script type="text/jsx">
+        ReactDOM.render(
+        <GalleryPopUp2/>, document.getElementById("app"));
+    </script>
+    <!-- jsx render end -->
+
+</body>
+
+</html>
