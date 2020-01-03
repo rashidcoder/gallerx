@@ -1,6 +1,6 @@
 function GTextArea(props) {
     return (
-        <div>
+        <div className={"form-input textarea"}>
             <textarea
              {...props}
             >

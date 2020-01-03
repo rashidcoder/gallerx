@@ -2,8 +2,11 @@
 function GLabel(props) {
     return (
 
-        <div>
-            <label {...props} >{props.text}</label>
+        <div className="form-label label">
+            <label 
+            className={props.className}
+            htmlFor={props.htmlFor}
+            >{props.text}</label>
         </div>
     )
 }
