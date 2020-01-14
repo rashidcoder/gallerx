@@ -16,7 +16,7 @@ class GalleryShortcodePopUP extends React.Component {
         <h2 className='header'>Success!</h2>
         <form className='form-contanier'>
           <span>
-            <h2 className={'text'}>
+            <h2 className='text'>
               your gallery 'test' has been created copy the following shortcode.
             </h2>
           </span>

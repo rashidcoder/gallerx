@@ -33,12 +33,10 @@ class GalleryMultipleFileUpload extends React.Component {
     for (const file of files) {
       let reader = new FileReader()
       reader.readAsDataURL(file)
-      this.show(file.name,file.size)
       reader.onload = () => {
         GalleryMultipleFileUpload._setImages(reader.result, file)
-        
-        // var tempDiv = '<span className={"file-name"}>' + file.name + '</span>' + '<span className={"file-size"}>' + (file.size / 1024) + 'kb' + '</span>' + '<div className={"progress-bar"}></div>'
-        // document.getElementsByClassName('progress-bar-contanier')[0].innerHTML += tempDiv
+        var tempDiv = '<span className={"file-name"}>' + file.name + '</span>' + '<span className={"file-size"}>' + (file.size / 1024) + 'kb' + '</span>' + '<div className={"progress-bar"}></div>'
+        document.getElementsByClassName('progress-bar-contanier')[0].innerHTML += tempDiv
 
       }
       reader.onerror = function (error) {
@@ -54,6 +52,9 @@ class GalleryMultipleFileUpload extends React.Component {
     console.log("dataaaaaaaaaaaaaaaaaaa::::"+JSON.stringify(this.state.view))
   }
   static _setImages = (img, file) => {
+  }
+  static _setImages = (img, file) => {
+
     var imgData = { name: file.name, size: file.size, hex: img }
     //image+= { name: file.name, size: file.size, hex: img }
     console.log("line 76 inside function :::" + JSON.stringify(imgData.name))
@@ -77,6 +78,24 @@ class GalleryMultipleFileUpload extends React.Component {
   submit = () => {
     console.log('line 33 clicked::::' + this.state.imageData)
     
+    
+    // this.setState({
+    //   imageData: { name: file.name, size: file.size,hex:img }
+    // })
+    //this.state.imageData=imgData
+    // this.setState({
+    //   imageData:imgData
+    // })
+    // console.log("updated state"+this.state.imageData)
+    //this.statedata(imgData)
+    //console.log("line 76 inside function :::" + JSON.stringify(imgData))
+    // show(imgData)
+  }
+  show(imgData) {
+    console.log("state data  show :::::73")
+  }
+  submit = () => {
+    console.log('line 33 clicked::::' + this.state.imageData)
   }
   render() {
     const { formData } = this.state
