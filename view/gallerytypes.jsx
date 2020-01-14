@@ -1,4 +1,4 @@
-class GalleryPopUp2 extends React.Component {
+class GalleryTypes extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -23,15 +23,15 @@ class GalleryPopUp2 extends React.Component {
         const{formData}=this.state
         console.log("23")
         return (
-            <div>
-                <h1>{this.state.formData.filesource}</h1>
+            <div className={"box-container"}>
+                <h1>{formData.filesource}</h1>
                 <h2 className="header">Add New Gallery WIZARD</h2>
-                <form className="contanier" >
+                <form className="form-contanier" >
                     <GLabel
                         text={"Chose the source of images"}
                         className={"label"}
                     />
-                    <div className="form-input">
+                    <div className="form-input-box">
                         <GRadioLink
                             name="sourceOfImage"
                             id={"mediaLibrary"}
@@ -39,7 +39,7 @@ class GalleryPopUp2 extends React.Component {
                             text={"Media Library"}
                             radionly={"true"}
                             onClick={this.handleclick}
-                            //onChange={this.handleclick}
+                            
                         />
                         <GRadioLink
                             name="sourceOfImage"
@@ -49,7 +49,7 @@ class GalleryPopUp2 extends React.Component {
                             radionly={"false"}
                             link={"#"}
                             onClick={this.handleclick}
-                            //onChange={this.handleclick}
+                            
                         />
                         <GRadioLink
                             name="sourceOfImage"
@@ -59,21 +59,20 @@ class GalleryPopUp2 extends React.Component {
                             radionly={"false"}
                             link={"#"}
                             onClick={this.handleclick}
-                            //onChange={this.handleclick}
+                            
                         />
                     </div>
 
-                    <div className="form-buttons">
+                    <div className="form-buttons-box">
                         <GButton
                             type="submit"
-                            className={"button"}
-                            text={"Preview"}
-                            id="previewButton"
+                            className={"btn btn-prev"}
+                            text={"Previous"} 
                         />
                         <GButton
-                            type={"buttton"}
-                            className={"button"}
-                            text={"Next"}
+                            type={"submit"}
+                            className={"btn btn-next"}
+                            text={"Next"} 
                             onClick={this.submit}
                         />
                     </div>

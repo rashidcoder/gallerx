@@ -1,0 +1,25 @@
+.box-container.gallery {
+    padding: 20px;
+}
+
+.box-container.gallery .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row .img {
+    display: flex;
+    flex-direction: column;
+}
+
+.img a img {
+    height: 170px;
+}
+
+.img span.image-title {
+    text-align: right;
+}
+
+.img .image-description {
+    text-align: center;
+}

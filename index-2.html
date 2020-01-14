@@ -4,25 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/app.css">
     <title>Gallery</title>
+
+    <link rel="stylesheet" href="css/app.css">
+
 </head>
 
-<body>
+<body class="options-body">
     <div id="app"></div>
 
     <!-- react | react dom & bable -->
-    <script crossorigin src="assets/react/react.development.js"></script>
-    <script crossorigin src="assets/react/react-dom.development.js"></script>
-    <script src="assets/babel.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <!-- react | react dom & babel end -->
 
-    <script type="text/jsx" src="view/gallerydetails.jsx"></script>
     <script type="text/jsx" src="view/gallerytypes.jsx"></script>
-    <script type="text/jsx" src="view/gallerymultiplefileupload.jsx"></script>
-
-
-
     <script type="text/jsx" src="view/basicomponents/glabel.jsx"></script>
     <script type="text/jsx" src="view/basicomponents/gInput.jsx"></script>
     <script type="text/jsx" src="view/basicomponents/gbutton.jsx"></script>
@@ -36,7 +33,7 @@
     <!--  jsx render -->
     <script type="text/jsx">
         ReactDOM.render(
-        <GalleryMultipleFileUpload/>, document.getElementById("app"));
+        <GalleryTypes/>, document.getElementById("app"));
     </script>
     <!-- jsx render end -->
 

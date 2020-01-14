@@ -1,7 +1,12 @@
 
 function GButton(props) {
     return (
-        <div>
-<button {...props} >{props.text}</button>
+        <div className="form-button button">
+<button 
+type={props.type}
+className={props.className}
+
+{...props}
+>{props.text}</button>
         </div>)
 }

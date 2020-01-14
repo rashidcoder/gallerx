@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/gallery.css">
     <title>Gallery</title>
 </head>
 
@@ -15,12 +15,16 @@
     <script crossorigin src="assets/react/react.development.js"></script>
     <script crossorigin src="assets/react/react-dom.development.js"></script>
     <script src="assets/babel.min.js"></script>
+
+
+    <!-- Axios cdns -->
+    <script src="assets/react/axiosmin.js"></script>
     <!-- react | react dom & babel end -->
 
     <script type="text/jsx" src="view/gallerydetails.jsx"></script>
     <script type="text/jsx" src="view/gallerytypes.jsx"></script>
     <script type="text/jsx" src="view/gallerymultiplefileupload.jsx"></script>
-
+    <script type="text/jsx" src="view/gallerylayout.jsx"></script>
 
 
     <script type="text/jsx" src="view/basicomponents/glabel.jsx"></script>
@@ -36,7 +40,7 @@
     <!--  jsx render -->
     <script type="text/jsx">
         ReactDOM.render(
-        <GalleryMultipleFileUpload/>, document.getElementById("app"));
+        <GalleryLayout/>, document.getElementById("app"));
     </script>
     <!-- jsx render end -->
 
